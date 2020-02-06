@@ -389,6 +389,17 @@ type Node struct {
 	// These fields are not respected when encoding the node.
 	Line   int
 	Column int
+
+	// EndLine and EndColumn hold the node's end position in the decoded YAML
+	// text. These fields are not respected when encoding the node.
+	EndLine   int
+	EndColumn int
+
+	// Index and EndIndex hold the node's start and end position in the decoded
+	// YAML text as a zero-based offset. These fields are not respected when
+	// encoding the node.
+	Index    int
+	EndIndex int
 }
 
 // LongTag returns the long form of the tag that indicates the data type for
