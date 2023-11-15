@@ -23,8 +23,8 @@ import (
 	"io"
 	"strings"
 
+	"github.com/lonegunmanb/atomatt-yaml"
 	. "gopkg.in/check.v1"
-	"gopkg.in/yaml.v3"
 )
 
 var nodeTests = []struct {
